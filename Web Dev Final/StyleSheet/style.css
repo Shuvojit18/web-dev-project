@@ -1,0 +1,412 @@
+/*CSS is a styling lang used for website design*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*adding style property for the logo*/
+.logo{
+    width: 20%;
+    display:  flex;
+    justify-content: center;
+    align-items:center; 
+}
+
+/*Making the logo image fit*/
+.logo img{
+    width: 33%;
+    border: 3px solid wheat;
+    border-radius: 50px; 
+}
+
+/*Adding some styling element for the navigation bar*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    
+}
+
+/*Here we add some design for navigation list*/
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+/*Styling the lines of nav list*/
+
+.nav-list li{
+    list-style: none;
+    padding: 25px 30px;
+}
+
+/*Styling the links of nav list*/
+
+.nav-list li a{
+    text-decoration: none;
+    color: wheat;
+}
+
+/*Adding a hover property but it looks like not working ?*/
+
+.nav-list li a:hover{
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+/*This portion is for right side of navigation bar*/
+
+.rightNav{
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+/*Adding some style for search bar*/
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius:  80px;
+}
+
+/*Adding some styles for the breadcrumbs*/
+   ul.breadcrumb {
+        padding: 50px 160px;
+        list-style: none;
+}
+    ul.breadcrumb li {
+        display: inline;
+        font-size: 18px;
+        color: wheat;
+}
+    ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: wheat;
+        content: "/\00a0";
+}
+    ul.breadcrumb li a {
+        color: wheat;
+        text-decoration: none;
+}
+    ul.breadcrumb li a:hover {
+        color: white;
+        text-decoration: underline;
+}
+    
+
+
+
+/*Adding some cool effects for the background */
+.background{
+    background: rgba(0,0,0,0.7) url(https://source.unsplash.com/1600x900/?playstation,xbox);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+
+/*This is the 1st content sec of the index*/
+.firstSection{
+    height: 100vh;
+}
+
+/*This is main content section */
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    margin: auto;
+    color: wheat;
+    height: 75%;
+}
+
+/*This one is for index.html */
+.firstHalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Kufam",sans-serif;
+}
+
+/*animation from left*/
+.animL{
+    transform: translateX(-300%);
+}
+
+/*animation from right*/
+.animR{
+    transform: translateX(300%);
+}
+
+/*animation from up*/
+.animU{
+    transform: translateY(-200%);
+}
+
+
+/*Styles the image*/
+.secondHalf{
+    width: 30%;
+}
+
+/*Adding some style for image thumbnail*/
+.secondHalf img{
+    width: 70%;
+    padding: 4px;
+    border: 4px solid wheat;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+
+}
+
+/*Adding headline style for big text*/
+.text-big{
+    font-size: 40px;
+    text-align: center;
+}
+
+/*Content text style*/
+.text-mid{
+    font-size: 30px;
+}
+/*Small text style*/
+.text-small{
+    font-size: 20px; 
+    color: wheat;
+    text-align: center;
+    
+}
+
+/*putting text decoration off for the link so it looks good*/
+.thumbnail a{
+    text-decoration: none;
+}
+
+/*styling btn*/
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid wheat;
+    border-radius: 80px;
+    font-size: 18px;
+    background: none;
+    color: wheat;
+    cursor: pointer;
+        
+}
+
+/*Content section*/
+.section{
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    background: rgba(0,0,0,0.7);
+    border: 3px solid wheat;
+    border-radius: 80px;
+    font-family: "Kufam",sans-serif;
+    
+        
+}
+
+/*Currently isnt used*/
+.imgFluid{
+ 
+}
+
+/*Reversed section in index.html for asthetic purpose*/
+.section-left{
+    flex-direction: row-reverse;  
+}
+
+/*styling content paragraph*/
+.paras{
+    padding: 0px 65px;
+    color: wheat;
+}
+
+/*Adding some style for main content text*/
+
+.sectionSubTag{
+    font-family: "Kufam",sans-serif;
+}
+
+/*styling links*/
+.sectionSubTag a{
+    text-decoration: none;
+    color: wheat;
+}
+ 
+/*styling images innisde thumbnail*/
+.thumbnail img{
+    width: 300px;
+    border: 3px solid wheat;
+    border-radius: 80px;
+    margin: 25px;
+    padding: 25px;
+    
+}
+
+.report{
+    width: 75%;
+}
+
+.mockups{
+    width: 25%;
+}
+
+/*Adding style for youtube videos*/
+.utube{
+    padding: 50px;
+    border: 3px solid wheat;
+    border-radius: 80px;
+    margin: 50px;
+    margin-top: 225px;
+    height: 50%;
+}
+
+
+.enlarge{
+    border-radius: 8px;
+}
+
+/*This is for responsive design, when vied from mobile menu style burger will appear */
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+
+
+/*adding lines in burger*/
+.line{
+    width: 33px;
+    background-color: wheat;
+    height: 2px;
+    margin: 5px 3px;
+    border: 3px solid wheat;
+    border-radius: 80px;
+}
+    
+/*Adding style for footer*/
+.text-footer{
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    color: wheat;
+    background: rgba(0,0,0,0.7);
+}
+
+/*Adding media queary style for responsive design*/
+@media only screen and (max-width: 1140px){
+/*    Make the logo appear on the left top side */
+    .logo{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        display: block;
+        top: 10px;
+        left: 25px;
+    }
+    
+/*    making the navigation list turn to column*/
+    .nav-list{
+        flex-direction: column;
+    }
+    
+/*    Adding some transition property so when menu pressed it looks cool*/
+    .navbar{
+        flex-direction: column;
+        height: 600px;
+        transition: all 0.8s ease-out;
+    }
+    
+/*    changing the button style*/
+    
+    .btn{
+        align-items: center;
+        width: 100%;
+    }
+    
+/*    making the search bar center oriented*/
+    #search{ 
+        align-items: center;
+        width: 100%;
+    }
+    
+/*    making the burger visisble*/
+    .burger{
+        display: block;
+    }
+    
+/*    hiding th breadcrumbs for mobile*/
+       ul.breadcrumb {
+        display: none;
+}
+    
+    .h-nav{
+        height: 69px;
+    }
+    
+/*    Toggling the visibility so when pressed button can hide or unhide*/
+    .v-class{
+        opacity: 0;
+    }
+    
+ 
+/*    some more style for main sec*/
+    .box-main{
+        padding-top: 125px;
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    
+/*    more style for sec*/
+    .section{
+         flex-direction: column-reverse;
+    }
+    
+/*    Changing the thumbnail style lil bit so it fits the window*/
+    .thumbnail{
+        padding: 25px;
+        margin-right: 100px;
+    }
+    
+/*    Making the thumbnail image screenwide*/
+    .thumbnail img{
+         width: 100%;
+    }
+    
+/*    click to enlarge was going left, it will prevent*/
+    .thumbnail p{
+        padding-left: 100px;
+    }
+    
+/*    styling the youtube video section*/
+    .utube{
+        padding: 25px;
+        margin: 25px;
+        margin-top: 150px;
+        
+
+    }
+    
+/*    More styling the video */
+    .utubeobj{
+        width: 100%;
+    }
+}
+    

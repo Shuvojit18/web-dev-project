@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This head section contains all the invisible information about the page -->
+<head>
+<!--    Tittle display at the top of browser-->
+  <title>Audio | PlayJob | For Game Devs</title>
+  <meta charset="utf-8">
+<!--    A description helps the user and search engine-->
+  <meta name="description" content="A website dedicated to full time working game devs">
+<!--    Name of the creator of the site-->
+  <meta name="author" content="Shuvojit Chakraborty">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    Refresh rate-->
+  <meta name="refresh" content="600">
+<!--    Keyword for indexing and SEO-->
+  <meta name="keywords" content="'">
+    
+<!-- Site still in test so turn of robots-->
+  <meta name="robots" content="noindex, nofollow" />    
+<!--    including the css stylesheet from StySheet folder-->
+  <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
+<!--    including the lightbox stylesheet for images  -->
+  <link href="lightbox2-dev/dist/css/lightbox.css" rel="stylesheet"/> 
+    <!--        including some fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+</head>
+<!--    This is body of the webpage-->
+<body>
+<!--    This section is for logo, navigation bar, searcg box-->
+    <nav class="navbar background h-nav">
+<!--     including logo image file and adding a link to homepage so user can return to index.html easily-->
+         <div class="logo"><a href="index.html"><img src="https://i.imgur.com/RHNskim.png" alt="logo"></a> 
+            </div>
+<!--     creating a list for navigation links -->
+         <ul class="nav-list v-class">
+<!--        linking relevent webpages-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="design.html">Design</a></li>
+            <li><a href="marketing.html">Marketing</a></li>
+            <li><a href="production.html">Production</a></li>
+            <li><a href="vfx.html">Vfx</a></li>
+            <li><a href="audio.html">Audio</a></li>
+<!--        Final coursework report, adding here so grader can find it easily-->
+            <li><a href="Docs/report.html">Coursework Report</a></li>
+<!--         Adding a contact mail so user can send email-->
+            <li><a href="mailto:contact@playjob.com" target="_blank" rel="noopener">Contact</a></li>
+<!--      end of list-->
+        </ul>
+<!--        Creating a search bar and button-->
+        <div class="rightNav v-class">
+            <input type="text" name="search" id="search">
+<!--        adding a button-->
+            <button class="btn btn-sm">Search </button>
+        </div>   
+<!--      This section is adding a hamburger style menu for mobile displays, activated only in mobile displays-->
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+<!--        end of navigation-->
+    </nav>
+    
+    <!--    Adding breadcrumbs for easier navigation-->
+    <ul class="breadcrumb background">
+        <li><a href="index.html">Home</a></li>
+        <li>Audio</li>
+    </ul>
+         
+      
+         <!--    Adding a section and background -->
+    
+    <div class="background">
+    <section class="section">
+        <div class="paras ">
+<!--            adding headline of the article -->
+            <p class="sectionTag text-big"><br><br>Game Audio, Level 1: The Basics of Sound for the Interactive Age by  Steve Horowitz and Scott Looney</p>
+            <!--            main content-->
+            <p class="sectionTag text-mid"><br><br>
+            You’ve probably been hearing a lot about game audio these days. There is no doubt that games keep on growing in popularity as gamification continues to permeate our everyday lives.
+
+            <br><br>From amazing new virtual reality (VR) and augmented reality (AR) experiences to massive multiplayer online games (MMOGs), the gaming revolution is still in full force.
+
+            <br><br>Maybe you’ve read articles about “middleware” or “adaptive audio” or watched various videos of sessions large and small with behind the scenes reports from all types of games.
+
+            <br><br>Learning sound for games means covering a lot of ground, and much of it may be confusing or hard to contextualize at first without a good primer like this one.
+
+            <br><br>Fortunately, at the Game Audio Institute (GAI), we’ve been teaching the art and craft of how to create and implement sounds for games and interactive experiences for nearly a decade, and are excited to share this series of articles covering the exciting, dynamic, and ever-changing world of game audio.
+
+            <br><br>In this hands-on series, we’ll be covering topics like audio middleware, sound for VR/AR games, and game engines, using our classroom tested materials and methods. We hope to be able to draw the curtain back on the inner workings of how sound is handled, let you experience a bit of the overall process yourselves, and whet your appetite for going further.
+
+            <br><br>The Fundamentals
+            <br>So what is game audio? Simply put, it is the art, science and technology of producing and configuring sounds for any kind of game or interactive media.
+
+            <br><br>Unless you’ve been living in a concrete bunker in an undisclosed location for the last 20 years or so, you probably know that games are incredibly popular worldwide—a roughly 123 to 135 billion dollar market according to recent surveys.
+
+            <br><br>A chart illustrating gaming revenue throughout the years.The gaming industry is a huge mega-business, bigger than movies, books or music, and it’s been steadily growing over the years. Along the way, the industry has experienced a number of ups and downs, shifts in focus and other dynamic changes.
+
+            <br><br>Change is ongoing and will always be a part of what it means to work in games, and this means that professionals can take pride in being part of a field that often pushes the envelope of what is possible with technology, and is in many ways still in the process of defining itself as an art form.
+
+            <br><br>That’s all well and good, you might say, but how does audio for games even work? First, let’s consider how games differ in comparison to linear mediums, like film or television.
+
+            <br><br>In a film, if a character goes into the dark spooky castle and opens the door at 13 minutes and 22 seconds, you can easily create or obtain a sound of a creaking door and place it on the timeline in your favorite DAW at that exact point.
+
+            <br><br>Once you synchronize it correctly with the film itself, it will always play at the same time. In other words, it’s predictable—you know exactly when it will happen. Because of that predictability, we can simply mix all of our sounds and music down to the output format we need: stereo, 5.1 surround and even Dolby Atmos, the result will be one or more files that play with 100% reliability in sync with the visuals.
+
+            <br><br>That’s usually not the case in games. A game is often like watching a film acted out at several times and from different angles, as the characters make decisions at a different point in time each time a scene is played. In a game, a character could conceivably wander around forever on the grounds of a spooky castle and never go into the castle itself! So we have to be prepared for nearly any outcome.
+
+            <br><br>Photo of the words "Non Linear".How could you successfully create sounds for a medium in which you don’t know when in time (or even if) a particular action is going to happen? How can you trigger these sounds reliably? The answer is that you need to throw away the idea of using only time as a basis for organizing sound and simply concentrate on the actions themselves.
+
+            <br><br>The key is to focus on how and not when.
+
+            <br><br>Let’s think of our spooky house situation from the angle of the action involved. Let’s assume that at some point, the character is going to come up to the house and open the door. It doesn’t matter when. So let’s list it as an action like this:
+
+            <br><br>Now we’ve defined our action. But how do we trigger it? In all games, there’s something that’s going to cause the door to move. Most likely this will be some kind of animation code, or physical interaction where you can push open the door, or maybe you just click on it with your mouse or joystick button.
+
+            <br><br>Whatever the trigger for the animation of the door is, you simply link that action with the sound file of a creaky door opening and voila! Instant synchronization. Whenever the character opens the door, the sound will play.
+
+
+
+            <br><br>However, this seemingly simple shift in thinking requires that each and every sound in the game must exist as a separate item. We can’t use a full mixdown of the sound effects and music into a single file.
+
+            <br><br>Full mixes in interactive experiences are the exception, not the rule. Everything has to be independently mixed and mastered separately—and in many cases in real time. Furthermore, we have to be really organized with all of these audio files. (For immersive AAA adventure games there can be hundreds of thousands of files!) This way, the programmer or integrator can track the function of each sound asset.
+
+            <br><br>This also means that how the audio is triggered in a game is intimately tied up with how the game is designed, and each game is a complete universe unto itself. It’s got its own set of rules and regulations for behavior and interactivity, and any change in terms of game design can significantly affect how the sounds are triggered.
+            <br><br>    
+            </p>
+<!--            end of article-->
+        </div>   
+        <!--        embedding a youtube video-->
+        <div class="utube">
+<!--            making autoplay turnoff so people dont get sick and also muting the video by default-->
+        <object class="utubeobj" data="https://www.youtube.com/embed/Vjm--AqG04Y?autoplay=0&mute=1"
+                width="420" height="315"></object>
+        </div>
+    </section>    
+        <!--        adding a footer for copyright info-->
+        <footer>
+            <p class="text-footer">
+            Copyright &copy;2020 - all  right reserved
+            </p>    
+        </footer>
+<!--        end of footer-->
+    </div>
+    <!--    adding responsive javascript script from js folder-->
+    <script src="js/resp.js"></script>
+  </body> 
+<!--    end of body-->
+</html>
